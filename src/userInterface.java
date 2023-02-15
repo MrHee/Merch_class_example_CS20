@@ -27,6 +27,16 @@ public class userInterface {
 
     void display(){
 
+        //Out of Stock Warning ---------
+
+        //Look through the list for any item with stock < 1
+        //Print one line for each item similar to the following
+        // WARNING  - <ITEMNAME> is out of stock. Please restock.
+
+
+        //------------------------------
+
+
         for ( merch item : inventory
         ) {
             System.out.println(item.name);
@@ -68,7 +78,7 @@ public class userInterface {
         //Find the target in list.
         for (merch item : inventory
              ) {
-            if(item.name == targetName){
+            if(item.name.equalsIgnoreCase(targetName)){
                 target = item;  //Found it.
             }
         }
@@ -84,6 +94,52 @@ public class userInterface {
 
     }
 
+
+    void editItem(){
+
+        System.out.println("Welcome to the Edit Product Wizard");
+
+        System.out.println("Enter the name of the product you want to edit. ");
+        String targetName = input.nextLine();
+        merch target = null;
+
+        //Find the target in list.
+        for (merch item : inventory
+        ) {
+            if(item.name.equalsIgnoreCase(targetName)){
+                target = item;  //Found it.
+            }
+        }
+
+
+        //Delete the target - must be seperate.
+        if( target != null){
+            inventory.remove(target);
+            System.out.println("Please enter the new name of the product: ");
+            String tempName = input.nextLine();
+
+            System.out.println("What is the new price of the product?");
+            double tempPrice = input.nextDouble();
+            input.nextLine(); //Purge the scanner. Avoid bug.
+
+            System.out.println("How many of this item are in stock?");
+            int tempStock = input.nextInt();
+            input.nextLine();
+
+            //Create the object with these temp properties.
+
+            merch tempMerch = new merch(tempName, tempPrice,tempStock);
+
+            inventory.add(tempMerch);
+        }else{
+            System.out.println("Not found.");
+        }
+
+
+
+
+
+    }
 
 
 
