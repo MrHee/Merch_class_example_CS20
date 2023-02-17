@@ -71,18 +71,7 @@ public class userInterface {
     void removeItem(){
         System.out.println("Welcome to the Remove Product Wizard");
 
-        System.out.println("Enter the name of the product you want to remove. ");
-        String targetName = input.nextLine();
-        merch target = null;
-
-        //Find the target in list.
-        for (merch item : inventory
-             ) {
-            if(item.name.equalsIgnoreCase(targetName)){
-                target = item;  //Found it.
-            }
-        }
-
+        merch target = selectItem("remove");
 
         //Delete the target - must be seperate.
         if( target != null){
@@ -99,18 +88,7 @@ public class userInterface {
 
         System.out.println("Welcome to the Edit Product Wizard");
 
-        System.out.println("Enter the name of the product you want to edit. ");
-        String targetName = input.nextLine();
-        merch target = null;
-
-        //Find the target in list.
-        for (merch item : inventory
-        ) {
-            if(item.name.equalsIgnoreCase(targetName)){
-                target = item;  //Found it.
-            }
-        }
-
+        merch target = selectItem("edit");
 
         //Delete the target - must be seperate.
         if( target != null){
@@ -141,8 +119,76 @@ public class userInterface {
 
     }
 
+//Reduce duplicate code using a selectItem() method.
+
+    merch selectItem(String word){
+        System.out.println("Enter the name of the product you want to " + word + ".");
+        String targetName = input.nextLine();
+        merch target = null;
+
+        //Find the target in list.
+        for (merch item : inventory
+        ) {
+            if(item.name.equalsIgnoreCase(targetName)){
+                target = item;  //Found it.
+            }
+        }
+
+        return target;
+    }
 
 
+
+
+void UILoop(){
+
+    System.out.println("Welcome to the store software.");
+
+    while(true){
+
+        display();
+        System.out.println("Cash on Hand: $" + cash_on_hand);
+
+        System.out.println("Main Menu:");
+        System.out.println("1. Sale\n2. Add a new product.\n3. Edit\n4. Remove\n5. Restock");
+        String response = input.nextLine();
+
+
+        if(response.toLowerCase().contains("sale") || response.contains("1")){
+
+            merch toBeSold = selectItem("sell");
+
+            if (toBeSold == null){
+                System.out.println("Item is not found.");
+            }
+            else{
+                System.out.println("How many " + toBeSold.name + "s do you want to sell?");
+                int number = input.nextInt();
+                input.nextLine(); //don't forget the bug.
+
+                cash_on_hand+= toBeSold.sell(number);
+
+            }
+
+
+        }
+        else if(response.toLowerCase().contains("add") || response.contains("2")){
+
+
+
+        }
+        else{
+            System.out.println("That command is invalid.");
+        }
+
+
+    }
+
+
+
+
+
+}
 
 
 

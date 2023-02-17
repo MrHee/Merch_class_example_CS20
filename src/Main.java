@@ -6,11 +6,7 @@ public class Main {
     userInterface theUI = new userInterface();
 
 
-    //Test remove item --------------------------------
-    theUI.display();
-    theUI.editItem();
-    theUI.display();
-//---------------------------------------------------------------------
+    theUI.UILoop();
 
 
         }
