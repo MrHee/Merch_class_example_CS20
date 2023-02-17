@@ -174,7 +174,7 @@ void UILoop(){
         }
         else if(response.toLowerCase().contains("add") || response.contains("2")){
 
-
+        addNewItem(); //Wizard takes care of the rest.
 
         }
         else{
