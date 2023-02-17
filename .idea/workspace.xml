@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="671c65e0-bfe7-42d5-a944-67be73a527d4" name="Changes" comment="Fixed Remove. &#10;Added Edit. &#10;Assigned &quot;Out of stock warning&quot; exersize.">
+    <list default="true" id="671c65e0-bfe7-42d5-a944-67be73a527d4" name="Changes" comment="Implemented the add() wizard. &#10;&#10;Wizards are the best.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       <workItem from="1675785106760" duration="3567000" />
       <workItem from="1676301529924" duration="3814000" />
       <workItem from="1676473062281" duration="3800000" />
-      <workItem from="1676646065966" duration="1992000" />
+      <workItem from="1676646065966" duration="3162000" />
     </task>
     <task id="LOCAL-00001" summary="ArrayList and ForEACH Loop">
       <created>1675439220241</created>
@@ -81,7 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676476543478</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added SelectItem() and Sell()&#10;&#10;Refactored remove and edit to use &quot;selectItem()&quot; method. &#10;Created sale method.">
+      <created>1676648168898</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676648168898</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemented the add() wizard. &#10;&#10;Wizards are the best.">
+      <created>1676648974847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676648974847</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +115,8 @@
     <MESSAGE value="ArrayList and ForEACH Loop" />
     <MESSAGE value="Add and Remove Methods" />
     <MESSAGE value="Fixed Remove. &#10;Added Edit. &#10;Assigned &quot;Out of stock warning&quot; excersize." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Remove. &#10;Added Edit. &#10;Assigned &quot;Out of stock warning&quot; excersize." />
+    <MESSAGE value="Added SelectItem() and Sell()&#10;&#10;Refactored remove and edit to use &quot;selectItem()&quot; method. &#10;Created sale method." />
+    <MESSAGE value="Implemented the add() wizard. &#10;&#10;Wizards are the best." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the add() wizard. &#10;&#10;Wizards are the best." />
   </component>
 </project>

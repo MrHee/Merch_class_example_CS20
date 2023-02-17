@@ -177,6 +177,14 @@ void UILoop(){
         addNewItem(); //Wizard takes care of the rest.
 
         }
+
+        // -----------------------------------------------------
+
+        //Add else ifs for Remove, Edit, and Restock. Implement all 3.
+
+
+        // -------------------------------------------------------
+
         else{
             System.out.println("That command is invalid.");
         }
