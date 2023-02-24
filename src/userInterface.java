@@ -40,7 +40,7 @@ public class userInterface {
         for ( merch item : inventory
         ) {
             System.out.println(item.name);
-            System.out.println("          " + item.quantityInStock + "          $" + item.price
+            System.out.println("          " + item.quantityInStock + "          $" + item.getPrice()
             );
 
         }

@@ -2,9 +2,18 @@ public class merch {
 
     //Create our PROPERTIES
 
-   double price;
+   private double price;
    String name;
    int quantityInStock;
+
+
+   //Getters and Setters
+
+    double getPrice(){
+        return price;
+    }
+
+
 
 
 

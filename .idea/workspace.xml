@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="671c65e0-bfe7-42d5-a944-67be73a527d4" name="Changes" comment="Implemented the add() wizard. &#10;&#10;Wizards are the best.">
+    <list default="true" id="671c65e0-bfe7-42d5-a944-67be73a527d4" name="Changes" comment="Added assignment placeholders.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/merch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/merch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -57,7 +62,8 @@
       <workItem from="1675785106760" duration="3567000" />
       <workItem from="1676301529924" duration="3814000" />
       <workItem from="1676473062281" duration="3800000" />
-      <workItem from="1676646065966" duration="3162000" />
+      <workItem from="1676646065966" duration="4717000" />
+      <workItem from="1677252473614" duration="406000" />
     </task>
     <task id="LOCAL-00001" summary="ArrayList and ForEACH Loop">
       <created>1675439220241</created>
@@ -94,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676648974847</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added assignment placeholders.">
+      <created>1676649282132</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676649282132</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,7 +118,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="encapsulation_examples" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -117,6 +142,7 @@
     <MESSAGE value="Fixed Remove. &#10;Added Edit. &#10;Assigned &quot;Out of stock warning&quot; excersize." />
     <MESSAGE value="Added SelectItem() and Sell()&#10;&#10;Refactored remove and edit to use &quot;selectItem()&quot; method. &#10;Created sale method." />
     <MESSAGE value="Implemented the add() wizard. &#10;&#10;Wizards are the best." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the add() wizard. &#10;&#10;Wizards are the best." />
+    <MESSAGE value="Added assignment placeholders." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added assignment placeholders." />
   </component>
 </project>
