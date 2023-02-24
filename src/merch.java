@@ -4,13 +4,23 @@ public class merch {
 
    private double price;
    String name;
-   int quantityInStock;
+   private int quantityInStock;
 
 
    //Getters and Setters
 
     double getPrice(){
         return price;
+    }
+
+    int getQuantity(){
+        return quantityInStock;
+    }
+
+    //Example setter
+    void setQuantity(int newQuantity){
+        quantityInStock = newQuantity;
+
     }
 
 
